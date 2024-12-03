@@ -10,21 +10,20 @@ public class ejerAnagramas{
  */
     public static void main (String [] args){
             // Pruebas con diferentes casos
-            System.out.println(esAnagrama("mora", "ramo")); // true
-            System.out.println(esAnagrama("mora", "amor")); // true
-            System.out.println(esAnagrama("mora", "roma")); // true
-            System.out.println(esAnagrama("mora", "rama")); // false
-            System.out.println(esAnagrama("mora", "mora")); // false
-            System.out.println(esAnagrama("moa", "morsa")); // false
+System.out.println(esAnagrama("mora", "ramo")); // true
+System.out.println(esAnagrama("mora", "amor")); // true
+System.out.println(esAnagrama("mora", "roma")); // true
+System.out.println(esAnagrama("mora", "rama")); //false
+System.out.println(esAnagrama("mora", "mora")); //false
+System.out.println(esAnagrama("moa", "morsa")); //false
 
         }
-    
-        /**
-         * Verifica si dos palabras son anagramas.
-         * @param palabra1 La primera palabra.
-         * @param palabra2 La segunda palabra.
-         * @return true si son anagramas, false en caso contrario.
-         */
+/**
+ * Verifica si dos palabras son anagramas.
+ * @param palabra1 La primera palabra.
+ * @param palabra2 La segunda palabra.
+ * @return true si son anagramas, false en caso contrario.
+  */
         public static boolean esAnagrama(String palabra1, String palabra2) {
             // Valida que ambas palabras no sean nulas
             if (palabra1 == null || palabra2 == null) {
@@ -36,9 +35,10 @@ public class ejerAnagramas{
                 return false;
             }
     
-            // Convierte las palabras a minúsculas, luego a arreglos de caracteres.
-            char[] lonPalabra1 = palabra1.toLowerCase().toCharArray();
-            char[] lonPalabra2 = palabra2.toLowerCase().toCharArray();
+// Convierte las palabras a minúsculas, luego a arreglos de caracteres.
+  
+char[] lonPalabra1 = palabra1.toLowerCase().toCharArray();
+char[] lonPalabra2 = palabra2.toLowerCase().toCharArray();
     
             // Ordena los arreglos.
             Arrays.sort(lonPalabra1);
