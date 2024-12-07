@@ -16,7 +16,6 @@ public class ejerAnagramas{
             System.out.println(esAnagrama("mora", "rama")); // false
             System.out.println(esAnagrama("mora", "mora")); // false
             System.out.println(esAnagrama("moa", "morsa")); // false
-
         }
     
         /**
